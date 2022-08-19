@@ -11,12 +11,16 @@ export default class App extends Component {
         <Text>
           Tamanho da grade: {params.getRowsAmount()}x{params.getColumnsAmount()}{' '}
         </Text>
-        <Field/>
+        <Field />
+        <Field opened />
+        <Field opened nearMines={1} />
+        <Field opened nearMines={2} />
+        <Field opened nearMines={3} />
+        <Field opened nearMines={6} />
+        
       </View>
     );
   }
 }
 
-const styles = StyleSheet.create({
-
-})
+const styles = StyleSheet.create({});
