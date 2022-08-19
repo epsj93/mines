@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Field from './src/components/Field';
 import params from './src/params';
 
 export default class App extends Component {
@@ -10,11 +11,12 @@ export default class App extends Component {
         <Text>
           Tamanho da grade: {params.getRowsAmount()}x{params.getColumnsAmount()}{' '}
         </Text>
+        <Field/>
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  
+
 })
