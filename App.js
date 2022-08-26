@@ -6,7 +6,7 @@ import params from './src/params';
 export default class App extends Component {
   render() {
     return (
-      <View>
+      <View style={styles.container}>
         <Text>Iniciando o Mines!</Text>
         <Text>
           Tamanho da grade: {params.getRowsAmount()}x{params.getColumnsAmount()}{' '}
@@ -21,10 +21,17 @@ export default class App extends Component {
         <Field mined opened />
         <Field mined opened exploded />
         <Field flagged />
-        <Field flagged opened/>
+        <Field flagged opened />
       </View>
     );
   }
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+});
