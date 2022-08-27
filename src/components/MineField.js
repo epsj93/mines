@@ -2,10 +2,10 @@ import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import Field from './Field';
 
-const MineField = ({ board }) => {
+const MineField = ({ board, onOpenField }) => {
   const rows = board.map((row, r) => {
     const columns = row.map((field, c) => {
-      return <Field {...field} key={c} />;
+      return <Field {...field} key={c} onOpen={() => onOpenField(r, c)} />;
     });
     return (
       <View key={r} style={{ flexDirection: 'row' }}>
