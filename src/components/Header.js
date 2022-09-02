@@ -9,7 +9,7 @@ const Header = ({ onFlagPress, onNewGame, flagsLeft }) => {
         <TouchableOpacity onPress={onFlagPress} style={styles.flagButton}>
           <Flag bigger />
         </TouchableOpacity>
-        <Text style={styles.flagsLeft}> {flagsLeft} </Text>
+        <Text style={styles.flagsLeft}>= {flagsLeft} </Text>
       </View>
       <TouchableOpacity style={styles.button} onPress={onNewGame}>
         <Text style={styles.buttonLabel}>Novo Jogo</Text>
